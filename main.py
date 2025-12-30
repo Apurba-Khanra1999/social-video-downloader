@@ -6,8 +6,25 @@ import streamlit as st
 from yt_dlp import YoutubeDL
 import tempfile
 import os
+import streamlit.components.v1 as components
 
 st.set_page_config(page_title="Social Video Downloader", page_icon="🎬", layout="centered")
+adsense_code = """
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3685660158116656"
+     crossorigin="anonymous"></script>
+
+<!-- Ad Unit -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3685660158116656"
+     data-ad-slot="XXXXXXXXXX"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+"""
 st.markdown(
     """
     <script>
@@ -350,3 +367,4 @@ if st.session_state.videos:
                 st.caption(f'Page: {chosen.get("webpage_url")}')
             if chosen.get("description"):
                 st.expander("Description").write(chosen.get("description"))
+components.html(adsense_code)
