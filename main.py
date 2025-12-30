@@ -13,20 +13,6 @@ adsense_code = """
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3685660158116656"
      crossorigin="anonymous"></script>
 """
-st.markdown(
-    """
-    <script>
-    (function() {
-        var d = document, s = d.createElement('script');
-        s.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3685660158116656';
-        s.async = true;
-        s.crossOrigin = 'anonymous';
-        d.head.appendChild(s);
-    })();
-    </script>
-    """,
-    unsafe_allow_html=True,
-)
 
 def is_instagram_url(u: str) -> bool:
     try:
