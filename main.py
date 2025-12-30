@@ -10,7 +10,15 @@ import os
 st.set_page_config(page_title="Social Video Downloader", page_icon="🎬", layout="centered")
 st.markdown(
     """
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3685660158116656" crossorigin="anonymous"></script>
+    <script>
+    (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3685660158116656';
+        s.async = true;
+        s.crossOrigin = 'anonymous';
+        d.head.appendChild(s);
+    })();
+    </script>
     """,
     unsafe_allow_html=True,
 )
