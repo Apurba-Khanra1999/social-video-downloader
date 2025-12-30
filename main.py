@@ -12,18 +12,6 @@ st.set_page_config(page_title="Social Video Downloader", page_icon="🎬", layou
 adsense_code = """
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3685660158116656"
      crossorigin="anonymous"></script>
-
-<!-- Ad Unit -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-3685660158116656"
-     data-ad-slot="XXXXXXXXXX"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 """
 st.markdown(
     """
